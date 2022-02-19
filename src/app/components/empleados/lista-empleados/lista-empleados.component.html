@@ -1,0 +1,27 @@
+
+ <a [routerLink]="['/registrar-empleado']" class="btn btn-success float-right">Registrar nuevo empleado</a>
+ <h2>Lista Empleados</h2>
+  <table class="table table-striped">
+    <thead class="table-dark">
+      <tr>
+        <td>Id</td>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Correo</td>
+        <td width="168">Opciones</td>
+      </tr>
+    </thead>
+    <tbody *ngFor="let empleado of empleados">
+      <tr>
+        <td>{{empleado.id}}</td>
+        <td>{{empleado.nombre}}</td>
+        <td>{{empleado.apellido}}</td>
+        <td>{{empleado.email}}</td>
+        <td>
+          <button (click)="verdetallesEmpleado(empleado.id)" class="outnone btn btn-dark mr-2" data-toggle="tooltip" data-placement="top" title="Ver detalles"><i class="bi bi-eye"></i></button>
+          <button (click)="actualizarEmpleado(empleado.id)" class="outnone btn btn-info mr-2" data-toggle="tooltip" data-placement="top" title="Editar" ><i class="bi bi-pencil"></i></button>
+          <button (click)="eliminarEmpleado(empleado.id)" class="outnone btn btn-danger" data-toggle="tooltip" data-placement="top" title="Borrar"><i class="bi bi-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

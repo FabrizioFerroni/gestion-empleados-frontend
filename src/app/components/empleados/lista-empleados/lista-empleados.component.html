@@ -1,5 +1,5 @@
 
- <a [routerLink]="['/registrar-empleado']" class="btn btn-success float-right">Registrar nuevo empleado</a>
+ <a [routerLink]="['/registrar-empleado']" class="btn btn-success outnone float-right">Registrar nuevo empleado</a>
  <h2>Lista Empleados</h2>
   <table class="table table-striped">
     <thead class="table-dark">
@@ -8,7 +8,7 @@
         <td>Nombre</td>
         <td>Apellido</td>
         <td>Correo</td>
-        <td width="168">Opciones</td>
+        <td width="168" class="text-center">Opciones</td>
       </tr>
     </thead>
     <tbody *ngFor="let empleado of empleados">

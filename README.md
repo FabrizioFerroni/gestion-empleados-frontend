@@ -1,5 +1,8 @@
 # Gestion Empleados Frontend
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/310fbc64-3a93-467d-97ed-db47285dd26a/deploy-status)](https://app.netlify.com/sites/ang-employee-manager/deploys)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
 
 ## Development server
